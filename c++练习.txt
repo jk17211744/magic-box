@@ -8,10 +8,11 @@ using namespace std;
 #define ifor(a,b) for(int i=a;i<=b;i++)
 #define jfor(a,b) for(int j=a;j<=b;j++)
 #define mem(a,b) memset(a,b,sizeof(a))
+```
 class Person
 {
     public:
-        Person (string name="ÀîËÄ",int age=15)
+        Person (string name="æŽå››",int age=15)
         {
             m_strName=name;
             m_iAge=age;
@@ -19,17 +20,18 @@ class Person
         ~Person(){};
         void sayInfo()
         {
-            cout<<"ÎÒÊÇ"<<m_strName<<endl;
-            cout<<"ÎÒ½ñÄê"<<m_iAge<<"Ëê"<<endl;
+            cout<<"æˆ‘æ˜¯"<<m_strName<<endl;
+            cout<<"æˆ‘ä»Šå¹´"<<m_iAge<<"å²"<<endl;
         }
         void sayLanguage()
         {
-            cout<<"ÎÒ»áËµ»°"<<endl;
+            cout<<"æˆ‘ä¼šè¯´è¯"<<endl;
         }
     protected:
         string m_strName;
         int m_iAge;
  };
+ ```
 
  class Chinese : public Person
  {
@@ -42,7 +44,7 @@ class Person
         ~Chinese(){};
         void sayLanguage()
         {
-            cout<<"ÎÒ»áËµººÓï"<<endl;
+            cout<<"æˆ‘ä¼šè¯´æ±‰è¯­"<<endl;
         }
         void personallntrouduce()
         {
@@ -61,13 +63,13 @@ class Person
         ~American(){};
         void sayLanguage()
         {
-            cout<<"ÎÒ»áËµÓ¢Óï"<<endl;
+            cout<<"æˆ‘ä¼šè¯´è‹±è¯­"<<endl;
         }
  };
 
  int main()
  {
-     Chinese *p=new Chinese("ÄÐ","ÀîËÄ",1500,150);
+     Chinese *p=new Chinese("ç”·","æŽå››",1500,150);
      p->sayLanguage();
      p->sayInfo();
      p->personallntrouduce();
