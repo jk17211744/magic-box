@@ -9,7 +9,6 @@ using namespace std;
 #define ifor(a,b) for(int i=a;i<=b;i++)
 #define jfor(a,b) for(int j=a;j<=b;j++)
 #define mem(a,b) memset(a,b,sizeof(a))
-```
 class Person
 {
     public:
@@ -32,7 +31,6 @@ class Person
         string m_strName;
         int m_iAge;
  };
- ```
 
  class Chinese : public Person
  {
